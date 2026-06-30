@@ -48,7 +48,7 @@ export const redisClient = {
     return result as string | null;
   },
 
-  set: async (key: string, value: string, options?: { ex?: number }): Promise<'OK' | null> => {
+  set: async (key: string, value: string, options?: any): Promise<any> => {
     if (isMock) {
       memoryStore.set(key, value);
       if (options?.ex) {
