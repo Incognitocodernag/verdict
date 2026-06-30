@@ -4,7 +4,7 @@ import { SkeletonLoader } from './components/SkeletonLoader';
 import { getASIN, getProductTitle, scrapeReviews, extractProductCategory } from './utils/scraper';
 import { HeartCrack, X } from 'lucide-react';
 
-const BACKEND_URL = 'http://localhost:5000/api/v1';
+const BACKEND_URL = 'https://verdict-backend-cqye.onrender.com/api/v1';
 const FRESH_CACHE_TTL_MS = 24 * 60 * 60 * 1000; // 24 Hours
 
 /**
